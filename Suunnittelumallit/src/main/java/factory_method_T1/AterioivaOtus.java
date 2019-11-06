@@ -4,10 +4,14 @@ package factory_method_T1;
  *
  * @author Ode
  */
+
+// Creator
 public abstract class AterioivaOtus {
     Juoma juoma = null;
+    Ruoka ruoka = null;
     
     public abstract Juoma createJuoma();
+    public abstract Ruoka createRuoka();
     
     public void aterioi() {
         syo();
@@ -15,7 +19,10 @@ public abstract class AterioivaOtus {
     }
     
     public void syo() {
-        System.out.println("Kylläpä ruoka maistuukin hyvältä!");
+        if (ruoka == null) {
+            ruoka = createRuoka();
+        }
+        System.out.println("Kylläpä " + ruoka + " maistuukin hyvältä!");
     }
     
     public void juo() {

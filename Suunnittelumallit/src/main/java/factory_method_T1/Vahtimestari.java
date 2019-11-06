@@ -6,11 +6,11 @@ package factory_method_T1;
  */
 
 // ConcreteCreator
-public class Opettaja extends AterioivaOtus {
+public class Vahtimestari extends AterioivaOtus {
     
     @Override
     public Juoma createJuoma() {
-        return new Vesi();
+        return new Mehu();
     }
     
     @Override

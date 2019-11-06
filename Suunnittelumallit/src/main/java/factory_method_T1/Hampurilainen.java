@@ -6,10 +6,11 @@ package factory_method_T1;
  */
 
 // ConcreteProduct
-public class Vesi implements Juoma {
+public class Hampurilainen implements Ruoka {
     
     @Override
     public String toString() {
-        return "vesi";
+        return "hampurilainen";
     }
+    
 }
