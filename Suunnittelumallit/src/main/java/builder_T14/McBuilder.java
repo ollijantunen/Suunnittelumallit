@@ -7,9 +7,9 @@ package builder_T14;
 public class McBuilder extends BurgerBuilder {
     private String nimi = "McDonalds";
     private StringBuilder burgerString;
-    private String sampyla = "ruissämpylä";
-    private String pihvi = "naudanliha 100% 150g";
-    private String juusto = "kermajuusto";
+    private String sampyla = "Ruissämpylä";
+    private String pihvi = "Naudanliha (100% 150g)";
+    private String juusto = "Kermajuusto";
     private String salaatti = "Romaine-salaatti";
     
     @Override
