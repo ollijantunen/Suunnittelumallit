@@ -12,11 +12,8 @@ public class RealImage implements IImage {
         loadImageFromDisk();
     }
 
-    /**
-     * Loads the image from the disk
-     */
     private void loadImageFromDisk() {
-        System.out.println("Loading   " + filename);
+        System.out.println("Loading    " + filename);
     }
 
     @Override
@@ -24,9 +21,6 @@ public class RealImage implements IImage {
         System.out.println(filename);
     }
 
-    /**
-     * Displays the image
-     */
     @Override
     public void displayImage() {
         System.out.println("Displaying " + filename);

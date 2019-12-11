@@ -7,6 +7,5 @@ package proxy_T12;
 public interface IImage {
 
     public void displayImage();
-
     public void showData();
 }

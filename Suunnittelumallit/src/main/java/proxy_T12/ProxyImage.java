@@ -18,9 +18,6 @@ public class ProxyImage implements IImage {
         System.out.println(filename);
     }
 
-    /**
-     * Displays the image
-     */
     @Override
     public void displayImage() {
         if (image == null) {
