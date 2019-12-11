@@ -8,8 +8,6 @@ import java.util.ArrayList;
  */
 public interface IAbstractFactory {
     
-    void teeVaatteet();
-    
     ArrayList<IVaate> toimitaVaatteet();
 
 }

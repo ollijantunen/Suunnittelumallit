@@ -9,27 +9,14 @@ import java.util.ArrayList;
 public class ConcreteFactoryAdidas implements IAbstractFactory {
     String merkki = "Adidas";
     ArrayList<IVaate> vaatteet;
-    private Farmarit farmarit;
-    private TPaita tPaita;
-    private Lippis lippis;
-    private Kengat kengat;
-
-    @Override
-    public void teeVaatteet() {
-        this.farmarit = new Farmarit(merkki);
-        this.tPaita = new TPaita(merkki);
-        this.lippis = new Lippis(merkki);
-        this.kengat = new Kengat(merkki);
-    }
 
     @Override
     public ArrayList<IVaate> toimitaVaatteet() {
-        teeVaatteet();
         vaatteet = new ArrayList<>();
-        vaatteet.add(farmarit);
-        vaatteet.add(tPaita);
-        vaatteet.add(lippis);
-        vaatteet.add(kengat);
+        vaatteet.add(new Farmarit(merkki));
+        vaatteet.add(new TPaita(merkki));
+        vaatteet.add(new Lippis(merkki));
+        vaatteet.add(new Kengat(merkki));
         
         return vaatteet;
     }
