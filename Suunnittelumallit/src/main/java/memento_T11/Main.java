@@ -1,13 +1,13 @@
-/**
- *
- * @author Ode
- */
 package memento_T11;
 
 import java.util.Random;
 
-public class Main {
+/**
+ *
+ * @author Ode
+ */
 
+public class Main {
     static int id = 0;
 
     public static void main(String[] args) {
@@ -15,10 +15,10 @@ public class Main {
         Arvuuttaja arpapeli = new Arvuuttaja();
         Random r = new Random();
 
-        //luodaan asiakas runnable
+        //luodaan runnable asiakas
         Runnable asiakas = () -> {
 
-            int plaahnum = id++;
+            int rid = id++;
             Object memento;
             boolean tarkistus = false;
             int arvaus = 0;
@@ -32,7 +32,7 @@ public class Main {
                 tarkistus = arpapeli.tarkistus(memento, arvaus);
             }
 
-            System.out.println(plaahnum + " arrvaus oikein vastaus oli " + arvaus + " peli kesti " + kierrokset + " kierrosta.");
+            System.out.println("'Asiakas' " + rid + " arvasi oikein. Vastaus oli " + arvaus + ". Peli kesti " + kierrokset + " kierrosta.");
         };
 
         //luodaan peliä pelaavat säikeet

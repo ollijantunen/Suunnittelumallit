@@ -7,9 +7,7 @@ import java.util.Random;
  * @author Ode
  */
 public class Arvuuttaja {
-
     private int arpa;
-
     Random r = new Random();
 
     public synchronized Object liityPeliin() {
